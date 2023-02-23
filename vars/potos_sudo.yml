@@ -1,0 +1,6 @@
+---
+
+potos_sudo_config: sudoers
+potos_sudo_rules:
+  - "00-potos-sudo-group-can-sudo"
+  - "01-potos-visudo-editor"
