@@ -1,8 +1,4 @@
 ---
-- name: sudo
-  src: git+https://github.com/projectpotos/ansible-role-potos_sudo.git
-  version: 'main'
-
 {% if potos_runtype == 'setup' %}
 - name: firstboot
   src: git+https://github.com/projectpotos/ansible-role-potos_firstboot
@@ -14,4 +10,8 @@
 
 - name: wallpaper
   src: git+https://github.com/projectpotos/ansible-role-potos_wallpaper.git
+  version: 'main'
+
+- name: sudo
+  src: git+https://github.com/projectpotos/ansible-role-potos_sudo.git
   version: 'main'
